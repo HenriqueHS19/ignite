@@ -4,7 +4,12 @@ import { Avatar } from '../Avatar/Avatar';
 
 import styles from './styles.module.css';
 
-export function Comment({ content, onDeleteComment }) {
+interface ICommnent {
+    content: string;
+    onDeleteComment: (comment: string) => void;
+}
+
+export function Comment({ content, onDeleteComment }: ICommnent) {
     const [likeCount, setLikeCount] = useState(0);
 
     function handleLike() {
@@ -29,7 +34,7 @@ export function Comment({ content, onDeleteComment }) {
                             <time title="Publicado ás 12:30h" dateTime='26-06-2022 12:30:12'> Cerca de 2h atrás </time>
                         </div>
 
-                        <button tittle="Delete comment" onClick={handleDeleteComment}>
+                        <button title="Delete comment" onClick={handleDeleteComment}>
                             <Trash size={24} />
                         </button>
 

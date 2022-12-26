@@ -1,0 +1,97 @@
+.container {
+    width: 100%;
+
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.container + .container {
+    margin-top: 1.5rem;
+}
+
+.container .content {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.container .content svg {
+    color: var(--gray-400);
+    transition: color 0.2s;
+}
+
+.container .content .comment {
+    flex: 1;
+    min-height: 7.5rem;
+    background: #29292E;
+    border-radius: 8px;
+    padding: 1rem 1rem 1rem 1.5rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.container .content .comment header {
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.container .content .comment header div {
+    display: flex;
+    flex-direction: column;
+}
+
+.container .content .comment header div span {
+    font-size: 0.7rem;
+    color: var(--gray-400);
+}
+
+.container .content .comment header button {
+    background: transparent;
+    border: none;
+}
+
+.container .content .comment header button:hover > svg {
+    color: var(--red-300);
+}
+
+.cotainer .content .comment p {
+    font-size: 0.8rem;
+    color: var(--gray-300);
+    line-height: 1.3rem;
+}
+
+.container .content .like {
+    max-width: 8rem;
+    background: transparent;
+    border: none;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--gray-400);
+}
+
+.container .content .like svg {
+    margin-right: 0.6rem;
+}
+
+.container .content .like:hover, .container .content .like:hover > svg {
+    color: var(--gray-100);
+}
+
+.container .content .like span::before {
+    content: '\2022';
+    padding: 0 0.25rem;
+}

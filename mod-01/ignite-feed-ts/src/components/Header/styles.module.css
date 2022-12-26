@@ -1,0 +1,12 @@
+.header {
+    max-width: 100vw;
+    background: var(--gray-800);
+    padding: 1.25rem 0;
+
+    display: flex;
+    justify-content: center;
+}
+
+.header img {
+    width: 10rem;
+}
