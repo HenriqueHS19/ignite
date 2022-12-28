@@ -13,7 +13,10 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     body, input, textarea, button {
-        font: 1rem 400 'Roboto', sans-serif;
+        font-family: 'Roboto', sans-serif;
+        font-size: 1rem;
+        font-weight: 400;
+        -webkit-font-smoothing: antialiased;
     }
 
     button {
