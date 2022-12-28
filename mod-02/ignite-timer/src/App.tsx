@@ -1,3 +1,14 @@
+import { ThemeProvider } from "styled-components";
+
+import { GlobalStyle } from "./styles/global";
+import { defaultTheme } from "./styles/theme/default";
+
+
 export function App() {
-  return <h1> Hello word </h1>
+  return (
+    <ThemeProvider theme={defaultTheme}>
+
+        <GlobalStyle />
+    </ThemeProvider>
+  );
 }
