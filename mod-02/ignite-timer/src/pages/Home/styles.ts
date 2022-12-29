@@ -49,7 +49,7 @@ const BasicInput = styled.input`
     outline: 0;
 
     font-weight: 700;
-    color: solid ${props => props.theme["gray-100"]};
+    color: ${props => props.theme["gray-100"]};
 
     transition: border-color .2s;
 
@@ -59,6 +59,10 @@ const BasicInput = styled.input`
 
     &:focus {
         border-color: ${props => props.theme["green-500"]};
+    }
+
+    &::-webkit-calendar-picker-indicator {
+        display: none !important;
     }
 `;
 
