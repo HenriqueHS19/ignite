@@ -14,16 +14,26 @@ export const Container = styled.div`
         button {
             width: 100%;
             height: 4rem;
-            background: ${props => props.theme["green-500"]};
+            background: ${props => props.theme["green-700"]};
             border: none;
             border-radius: 8px;
             font-weight: 700;
             color: ${props => props.theme["gray-100"]};
+            transition: background-color .2s;
 
             display: flex;
             justify-content: center;
             align-items: center;
             gap: 0.5rem;
+
+            &:disabled {
+                opacity: 0.7;
+                cursor: not-allowed;
+            }
+
+            &:not(:disabled):hover {
+                background: ${props => props.theme["green-500"]};
+            }
         }
     }
 `;
