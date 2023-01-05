@@ -3,18 +3,21 @@ import { BrowserRouter } from 'react-router-dom';
 
 import { Router } from "./Router";
 
+import { CycleContextProvider } from "./contexts/CycleContext";
+
 import { GlobalStyle } from "./styles/global";
 import { defaultTheme } from "./styles/theme/default";
 
-
 export function App() {
-  return (
-    <ThemeProvider theme={defaultTheme}>
-        <BrowserRouter>
-            <Router />
-        </BrowserRouter>
+    return (
+        <ThemeProvider theme={defaultTheme}>
+            <BrowserRouter>
+                <CycleContextProvider>
+                    <Router />
+                </CycleContextProvider>
+            </BrowserRouter>
 
-        <GlobalStyle />
-    </ThemeProvider>
-  );
+            <GlobalStyle />
+        </ThemeProvider>
+    );
 }
