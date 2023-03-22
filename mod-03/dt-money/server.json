@@ -1,0 +1,28 @@
+{
+  "transactions": [
+    {
+      "id": 1,
+      "description": "Desenvolvimento",
+      "price": 4000,
+      "type": "income",
+      "category": "Venda",
+      "createdAt": "03-16-2023"
+    },
+    {
+      "description": "Aluguel",
+      "category": "Despesas ",
+      "price": 1000,
+      "type": "outcome",
+      "createdAt": "2023-03-21T01:09:54.869Z",
+      "id": 2
+    },
+    {
+      "description": "Faculdade",
+      "category": "Educação",
+      "price": 250,
+      "type": "outcome",
+      "createdAt": "2023-03-22T00:14:51.041Z",
+      "id": 3
+    }
+  ]
+}
